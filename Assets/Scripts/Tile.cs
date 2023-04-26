@@ -12,10 +12,17 @@ public class Tile : MonoBehaviour {
 
     public LayerMask obstacleLayer;
 
+
+    public Color highlightedColor;
+    public bool isWalkable;
+    GameMaster gm;
+
     private void Start() {
         rend = GetComponent<SpriteRenderer>();
         int randTile = Random.Range(0, tileGraphics.Length);
         rend.sprite = tileGraphics[randTile];
+
+        gm = FindObjectOfType<GameMaster>();
     }
 
     private void OnMouseEnter() {
@@ -33,5 +40,15 @@ public class Tile : MonoBehaviour {
         } else {
             return true;
         }
+    }
+
+    public void Highlight() {
+        rend.color = highlightedColor;
+        isWalkable = true;
+    }
+
+    public void Reset() {
+        rend.color = Color.white;
+        isWalkable = false;
     }
 }
