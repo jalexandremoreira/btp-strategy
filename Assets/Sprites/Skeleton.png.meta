@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 38a7f479bfb474cfa8db6bcc5afeeb4d
+guid: 266b9e599ce65489587c33642f768b63
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,55 +107,55 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Soldier_0
+      name: Skeleton_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 284
-        width: 280
-        height: 360
+        x: 19
+        y: 294
+        width: 221
+        height: 226
       alignment: 9
-      pivot: {x: 0.67006207, y: 0.4831654}
+      pivot: {x: 0.5028554, y: 0.044865567}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a802f56b53c394ef881dbfd21745d187
-      internalID: -1547343850
+      spriteID: b99ca711240604f5198336cc23358e98
+      internalID: -188751494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_1
+      name: Skeleton_1
       rect:
         serializedVersion: 2
-        x: 323
-        y: 255
-        width: 530
-        height: 443
+        x: 407
+        y: 229
+        width: 250
+        height: 285
       alignment: 9
-      pivot: {x: 0.6159805, y: 0.038776956}
+      pivot: {x: 0.69183743, y: 0.4845005}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7402e4cf664234c07a7971529f3bd533
-      internalID: 275911839
+      spriteID: 5859e0bea22944c6c8334d29aa62463a
+      internalID: 697308205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_2
+      name: Skeleton_2
       rect:
         serializedVersion: 2
-        x: 33
-        y: 139
-        width: 4
-        height: 5
+        x: 500
+        y: 230
+        width: 11
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,113 +163,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ceb86a13c9d7e41a3981706ea10b8602
-      internalID: -1493031091
+      spriteID: af48aa39fa85c40e18d90df0daa30ed8
+      internalID: 409886389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_3
+      name: Skeleton_3
       rect:
         serializedVersion: 2
-        x: 65
-        y: 41
-        width: 343
-        height: 206
+        x: 9
+        y: 83
+        width: 205
+        height: 142
       alignment: 9
-      pivot: {x: 0.03808765, y: 0.24363098}
+      pivot: {x: 0.96174026, y: 0.5933234}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6f1232c1e560405da5f56840b3e4994
-      internalID: 1200579643
+      spriteID: 55a44dd9140f14f7993225d9a26c7da5
+      internalID: 314575007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_4
+      name: Skeleton_4
       rect:
         serializedVersion: 2
-        x: 422
-        y: 35
-        width: 184
-        height: 180
+        x: 274
+        y: 43
+        width: 134
+        height: 148
       alignment: 9
-      pivot: {x: 0.5094107, y: 0.25950822}
+      pivot: {x: 0.6036042, y: 0.05229901}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 057970b4bf68447b68cd81ad263f1dc2
-      internalID: 899717431
+      spriteID: 11f6a443b19a24ec2963ae3124730c3e
+      internalID: 583142958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_5
+      name: Skeleton_5
       rect:
         serializedVersion: 2
-        x: 660
-        y: 74
+        x: 559
+        y: 56
         width: 34
-        height: 77
+        height: 69
       alignment: 9
-      pivot: {x: 0.5, y: 0.94975024}
+      pivot: {x: 0.66703886, y: 0.9481332}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 070ec8815bce34f2eba450708f35d56e
-      internalID: 1160788235
+      spriteID: e0e52e7ecf5334006a82ebd1af5aa1c9
+      internalID: 1441341166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_6
+      name: Skeleton_6
       rect:
         serializedVersion: 2
-        x: 754
-        y: 87
-        width: 33
-        height: 80
+        x: 635
+        y: 65
+        width: 41
+        height: 68
       alignment: 9
-      pivot: {x: 0.39505652, y: 0.9328848}
+      pivot: {x: 0.19217291, y: 0.9268832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3faa450f7374044d4a4c046e9ca18753
-      internalID: 743908669
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Soldier_7
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 139
-        width: 4
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f825a2824890440b889210fb6bd1e06
-      internalID: -1442282450
+      spriteID: 83aff2dcfdb0e45e4a2ecad8d0a203e8
+      internalID: 746738174
       vertices: []
       indices: 
       edges: []
@@ -285,14 +264,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Soldier_0: -1547343850
-      Soldier_1: 275911839
-      Soldier_2: -1493031091
-      Soldier_3: 1200579643
-      Soldier_4: 899717431
-      Soldier_5: 1160788235
-      Soldier_6: 743908669
-      Soldier_7: -1442282450
+      Skeleton_0: -188751494
+      Skeleton_1: 697308205
+      Skeleton_2: 409886389
+      Skeleton_3: 314575007
+      Skeleton_4: 583142958
+      Skeleton_5: 1441341166
+      Skeleton_6: 746738174
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
