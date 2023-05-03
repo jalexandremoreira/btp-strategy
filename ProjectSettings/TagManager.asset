@@ -41,6 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: cursor
+    uniqueID: 3850115775
+    locked: 0
   - name: obstacles
     uniqueID: 3361506837
     locked: 0

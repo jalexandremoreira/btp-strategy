@@ -7,8 +7,6 @@ using Random=UnityEngine.Random;
 public class Tile : MonoBehaviour {
     private SpriteRenderer rend;
     public Sprite[] tileGraphics;
-    
-    public float hoverAmount;
 
     public LayerMask obstacleLayer;
 
@@ -23,14 +21,6 @@ public class Tile : MonoBehaviour {
         rend.sprite = tileGraphics[randTile];
 
         gm = FindObjectOfType<GameMaster>();
-    }
-
-    private void OnMouseEnter() {
-        transform.localScale += Vector3.one * hoverAmount;
-    }
-
-    private void OnMouseExit() {
-        transform.localScale -= Vector3.one * hoverAmount;
     }
 
     public bool IsClear() {

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7350208493062653621}
   - component: {fileID: -9069726977382981751}
   - component: {fileID: 1032272392}
+  - component: {fileID: 1807265966248131700}
   m_Layer: 0
   m_Name: Tile
   m_TagString: Untagged
@@ -108,7 +109,6 @@ MonoBehaviour:
   - {fileID: 373468106, guid: 7eb9142f4bcc143cbb53c7b77c9bc524, type: 3}
   - {fileID: 2025152481, guid: 7eb9142f4bcc143cbb53c7b77c9bc524, type: 3}
   - {fileID: 2057743505, guid: 7eb9142f4bcc143cbb53c7b77c9bc524, type: 3}
-  hoverAmount: 0.03
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -159,3 +159,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.9300003, y: 5.8801723}
   m_EdgeRadius: 0
+--- !u!114 &1807265966248131700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449065221094499320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6de50cb79fd34b829dc2e175b01e862, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverAmount: 0.035
