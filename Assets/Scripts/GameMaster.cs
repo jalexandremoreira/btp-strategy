@@ -44,6 +44,8 @@ public class GameMaster : MonoBehaviour {
 
         foreach(Unit unit in FindObjectsOfType<Unit>()) {
             unit.hasMoved = false;
+            unit.weaponIcon.SetActive(false);
+            unit.hasAttacked = false;
         }
     }
 }

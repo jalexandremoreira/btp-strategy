@@ -15,12 +15,20 @@ public class Unit : MonoBehaviour {
 
     public int playerNumber;
 
+    public int attackRange;
+    List<Unit> enemiesInRange = new List<Unit>();
+    public bool hasAttacked;
+
+    public GameObject weaponIcon;
+
     private void Start() {
         gm = FindObjectOfType<GameMaster>();
     }
 
     private void OnMouseDown()
     {
+        ResetWeaponIcons();
+
         if (selected == true)
         {
             selected = false;
@@ -38,6 +46,7 @@ public class Unit : MonoBehaviour {
                 gm.selectedUnit = this;
 
                 gm.ResetTiles();
+                GetEnemies();
                 GetWalkableTiles();
             }
         }
@@ -61,6 +70,25 @@ public class Unit : MonoBehaviour {
         }
     }
 
+    void GetEnemies() {
+        enemiesInRange.Clear();
+
+        foreach (Unit unit in FindObjectsOfType<Unit>()) {
+            if (Mathf.Abs(transform.position.x - unit.transform.position.x) + Mathf.Abs(transform.position.y - unit.transform.position.y) <= attackRange) {
+                if (unit.playerNumber != gm.playerTurn && hasAttacked == false) {
+                    enemiesInRange.Add(unit);
+                    unit.weaponIcon.SetActive(true);
+                }
+            }
+        }
+    }
+
+    public void ResetWeaponIcons() {
+        foreach (Unit unit in FindObjectsOfType<Unit>()) {
+            unit.weaponIcon.SetActive(false);
+        }
+    }
+
     public void Move(Vector2 tilePos)
     {
         gm.ResetTiles();
@@ -79,5 +107,7 @@ public class Unit : MonoBehaviour {
         }
 
         hasMoved = true;
+        ResetWeaponIcons();
+        GetEnemies();
     }
 }
