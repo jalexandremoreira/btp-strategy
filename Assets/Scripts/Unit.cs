@@ -26,6 +26,8 @@ public class Unit : MonoBehaviour {
     public int defenseDamage;
     public int armor;
 
+    public DamageIcon damageIcon;
+
     private void Start() {
         gm = FindObjectOfType<GameMaster>();
     }
@@ -74,10 +76,14 @@ public class Unit : MonoBehaviour {
         int myDamage = enemy.defenseDamage - armor;
 
         if (enemyDamage >= 1) {
+            DamageIcon instance = Instantiate(damageIcon, enemy.transform.position, Quaternion.identity);
+            instance.Setup(enemyDamage);
             enemy.health -= enemyDamage;
         }
 
         if (myDamage >= 1) {
+            DamageIcon instance = Instantiate(damageIcon, transform.position, Quaternion.identity);
+            instance.Setup(myDamage);
             health -= myDamage;
         }
 

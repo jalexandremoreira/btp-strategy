@@ -376,7 +376,7 @@ Transform:
   - {fileID: 4924674531210950744}
   - {fileID: 6474953593543313799}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &4037451773846275730
 Animator:
@@ -468,6 +468,7 @@ MonoBehaviour:
   attackDamage: 5
   defenseDamage: 2
   armor: 1
+  damageIcon: {fileID: 5319779988055052859, guid: 26ac2a8fb79694e39b145a5b0df4383f, type: 3}
 --- !u!114 &399928261653553441
 MonoBehaviour:
   m_ObjectHideFlags: 0
