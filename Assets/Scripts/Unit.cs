@@ -21,6 +21,11 @@ public class Unit : MonoBehaviour {
 
     public GameObject weaponIcon;
 
+    public int health;
+    public int attackDamage;
+    public int defenseDamage;
+    public int armor;
+
     private void Start() {
         gm = FindObjectOfType<GameMaster>();
     }
@@ -49,6 +54,41 @@ public class Unit : MonoBehaviour {
                 GetEnemies();
                 GetWalkableTiles();
             }
+        }
+
+        Collider2D col = Physics2D.OverlapCircle(Camera.main.ScreenToWorldPoint(Input.mousePosition), 0.15f);
+        Unit unit = col.GetComponent<Unit>();
+        if(gm.selectedUnit != null)
+        {
+            if (gm.selectedUnit.enemiesInRange.Contains(unit) && gm.selectedUnit.hasAttacked == false)
+            {
+                gm.selectedUnit.Attack(unit);
+            }
+        }
+    }
+
+    void Attack(Unit enemy) {
+        hasAttacked = true;
+
+        int enemyDamage = attackDamage - enemy.armor;
+        int myDamage = enemy.defenseDamage - armor;
+
+        if (enemyDamage >= 1) {
+            enemy.health -= enemyDamage;
+        }
+
+        if (myDamage >= 1) {
+            health -= myDamage;
+        }
+
+        if (enemy.health <= 0) {
+            Destroy(enemy.gameObject);
+            GetWalkableTiles();
+        }
+
+        if (health <= 0) {
+            gm.ResetTiles();
+            Destroy(this.gameObject);
         }
     }
 

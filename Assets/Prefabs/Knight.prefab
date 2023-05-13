@@ -209,6 +209,10 @@ MonoBehaviour:
   attackRange: 1
   hasAttacked: 0
   weaponIcon: {fileID: 1308722299574348771}
+  health: 5
+  attackDamage: 3
+  defenseDamage: 2
+  armor: 1
 --- !u!114 &7193730384521554979
 MonoBehaviour:
   m_ObjectHideFlags: 0
