@@ -469,6 +469,7 @@ MonoBehaviour:
   defenseDamage: 2
   armor: 1
   damageIcon: {fileID: 5319779988055052859, guid: 26ac2a8fb79694e39b145a5b0df4383f, type: 3}
+  deathEffect: {fileID: 6789538027744952103, guid: 6c93c344ef47a4c49b1e431d417538a5, type: 3}
 --- !u!114 &399928261653553441
 MonoBehaviour:
   m_ObjectHideFlags: 0
